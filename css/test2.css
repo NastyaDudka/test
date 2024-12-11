@@ -1,14 +1,21 @@
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.box {
-    /* display: inline-block; */
-     width: 100px;
-     height: 100px;
-     background-color: burlywood;
-     padding: 10px;
-     border: 5px solid darkred;
-     margin: 10px; 
-    
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  flex-basis: 100px;
+  height: 100px;
+  background-color: burlywood;
+  padding: 10px;
+  border: 5px solid darkred;
+  margin: 10px;
+}
+
+.item:nth-child(2) {
+  align-self: end;
 }
